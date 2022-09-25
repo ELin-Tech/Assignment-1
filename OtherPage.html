@@ -29,7 +29,7 @@
         }
     </style>
 
-<body style="background-color:gray ;">
+<body style="background-color:gray;color: yellow;">
     <h1 style="text-align:center ;">Other Page</h1>
     <div class="row">
         <div class="column">
@@ -83,6 +83,25 @@
         It's okay to just admit you're wrong, you know?
 
     </p>
+    <script>
+        function ChangeColor() {
+            let all = document.getElementsByTagName("*");
+            let next = document.body.style.color;
+            if (next == "yellow") {
+                for (var i = 0, max = all.length; i < max; i++) {
+                    document.body.style.color = "black";
+                }
+            } else {
+                document.body.style.color = "yellow";
+            }
+        }
+
+    </script>
+    <div style="text-align:center ;">
+        <button type="button" onclick="ChangeColor()" onclick>
+            Click Me for a suprise!
+        </button>
+    </div>
     <p align="center">
         <a href="Index.html">
             Home Page
